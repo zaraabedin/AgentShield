@@ -33,12 +33,6 @@
 
 const API_URL = "/svc/api";
 
-/*
- * Riya's Python x402 client is currently not directly
- * callable from the browser.
- *
- * Keep this empty until Riya exposes a browser/API bridge.
- */
 const X402_PAYMENT_URL = "";
 
 
