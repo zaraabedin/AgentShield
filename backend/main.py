@@ -24,6 +24,7 @@ app = FastAPI(
     title="AgentShield API",
     description="Trust infrastructure for autonomous AI commerce",
     version="0.6.0"
+    root_path="/svc/api"
 )
 
 initialize_database()
@@ -113,7 +114,6 @@ def root():
 
 
 @app.get("/health")
-@app.get("/svc/api/health")
 def health():
     return {
         "status": "healthy"
