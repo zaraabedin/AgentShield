@@ -1,6 +1,4 @@
-const API_URL = String(import.meta.env.VITE_API_URL || "http://127.0.0.1:8000")
-  .trim()
-  .replace(/\/$/, "");
+const API_URL = "/svc/api";
 
 function apiTarget() {
   return API_URL || window.location.origin;
