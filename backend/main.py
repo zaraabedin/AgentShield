@@ -1,19 +1,19 @@
 from typing import Any, Optional
 
-from backend.authorization import authorize_transaction
-from backend.algorand import send_algorand_payment
+from authorization import authorize_transaction
+from algorand import send_algorand_payment
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from backend.trust_engine import calculate_trust_score, make_decision
-from backend.database import (
+from trust_engine import calculate_trust_score, make_decision
+from database import (
     initialize_database,
     save_transaction,
     get_transactions,
     get_providers as get_db_providers
 )
-from backend.network import get_network_config
-from backend.x402_payment import (
+from network import get_network_config
+from x402_payment import (
     complete_browser_payment,
     payment_status,
     prepare_browser_payment,
