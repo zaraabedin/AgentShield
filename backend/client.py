@@ -10,7 +10,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from backend.x402_payment import payment_status
+from x402_payment import payment_status
 
 load_dotenv()
 
