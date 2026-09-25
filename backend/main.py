@@ -113,6 +113,7 @@ def root():
 
 
 @app.get("/health")
+@app.get("/svc/api/health")
 def health():
     return {
         "status": "healthy"
