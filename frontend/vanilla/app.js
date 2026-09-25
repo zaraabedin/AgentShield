@@ -36,8 +36,7 @@ const API_URL =
     window.location.hostname === "127.0.0.1" ||
     window.location.protocol === "file:"
         ? "http://127.0.0.1:8000"
-        : "https://agent-shield-cz3rdqchd-zaraabedin58-6687.vercel.app";
-
+        : "/svc/api";
 
 /*
  * Riya's Python x402 client is currently not directly
