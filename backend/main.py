@@ -23,7 +23,7 @@ from x402_payment import (
 app = FastAPI(
     title="AgentShield API",
     description="Trust infrastructure for autonomous AI commerce",
-    version="0.6.0"
+    version="0.6.0",
     root_path="/svc/api"
 )
 
