@@ -15,7 +15,7 @@ import os
 
 from dotenv import load_dotenv
 
-from backend.network import explorer_url, get_network_config
+from network import explorer_url, get_network_config
 
 os.environ.setdefault("SSL_CERT_FILE", certifi.where())
 os.environ.setdefault("REQUESTS_CA_BUNDLE", certifi.where())
