@@ -32,9 +32,11 @@
    ============================================================ */
 
 const API_URL =
-    window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.protocol === "file:"
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    window.location.protocol === "file:"
         ? "http://127.0.0.1:8000"
-        : "http://172.20.10.10:8000";
+        : "https://agent-shield-cz3rdqchd-zaraabedin58-6687.vercel.app";
 
 
 /*
