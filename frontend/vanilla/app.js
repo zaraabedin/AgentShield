@@ -31,12 +31,7 @@
    CONFIG
    ============================================================ */
 
-const API_URL =
-    window.location.hostname === "localhost" ||
-    window.location.hostname === "127.0.0.1" ||
-    window.location.protocol === "file:"
-        ? "http://127.0.0.1:8000"
-        : "/svc/api";
+const API_URL = "/svc/api";
 
 /*
  * Riya's Python x402 client is currently not directly
