@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from fastapi import FastAPI
 
-from backend.network import get_network_config
+from network import get_network_config
 from x402.http import (
     FacilitatorConfig,
     HTTPFacilitatorClient,
